@@ -1,0 +1,9 @@
+
+<div class="personas">
+  <div *ngFor="let persona of personas">
+    <p>{{persona.id}}</p>
+    <p>{{persona.nombre}}</p>
+    <p>{{persona.apellido}}</p>
+    <button (click)="delete(persona.id)">Elimina</button>
+  </div>
+</div>
